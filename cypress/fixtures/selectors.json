@@ -1,5 +1,6 @@
 {
   "landingSignUpButton": ".Header2_header__nav__btn__wRKfY div:nth-child(2) button",
+  "landingLoginButton": ".Header2_header__nav__btn__wRKfY div:nth-child(1) button",
   "fullName": "#fullname",
   "businessName": "#businessname",
   "businessEmail": "#businessemail",
@@ -11,5 +12,6 @@
   "twitterHandle": "#twitterHandle",
   "howDidYouHearAboutMima": ".sc-cPiKLX.iafYdr",
   "optionChoice": "#scrollableDiv > div:nth-child(2)",
-  "password": "#password"
+  "password": "#password",
+  "finalSignUpButton": "div > div.sc-jXbUNg.fvamil > button"
 }

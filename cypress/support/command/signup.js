@@ -34,9 +34,51 @@ Cypress.Commands.add('typebuzRegNum', () => {
     
 })
 
+
 Cypress.Commands.add('clickNextButton', () => { 
     cy.get('button:nth-child(1)').should('be.visible').click()
     
     
 })
 
+Cypress.Commands.add('typeWebsite', () => { 
+    
+    cy.get('#website').should('be.visible').type(faker.company.buzzNoun)
+
+})
+
+Cypress.Commands.add('typeInstagram', () => { 
+    
+    cy.get('#instagramHandle').should('be.visible').type(faker.company.buzzNoun)
+
+})
+
+Cypress.Commands.add('typeTwitter', () => { 
+    
+    cy.get('#twitterHandle').should('be.visible').type(faker.company.buzzNoun)
+
+})
+
+Cypress.Commands.add('clickMimaAwareness', () => { 
+    cy.get('.sc-cPiKLX.iafYdr').should('be.visible').click()
+    
+    
+})
+
+Cypress.Commands.add('clickSelectOption', () => { 
+    cy.get('#scrollableDiv > div:nth-child(2)').should('be.visible').click()
+    
+    
+})
+
+Cypress.Commands.add('typePassword', () => { 
+    
+    cy.get('#password').should('be.visible').type('Password1$')
+
+})
+
+Cypress.Commands.add('clickFinalSignUp', () => { 
+    cy.get('div > div.sc-jXbUNg.fvamil > button').should('be.visible').click()
+    
+    
+})

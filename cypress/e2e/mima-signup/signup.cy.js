@@ -10,6 +10,13 @@ describe('Signup Test Scenarios', () => {
     cy.typeInAField(data.phoneNumber, faker.phone.number('+23456########'))
     cy.typeInAField(data.businessRegNum, 'NG-3828221')
     cy.clickAnyElement(data.nextButton)
+    cy.typeInAField(data.website, 'fiyin.com')
+    cy.typeInAField(data.igHandle, faker.company.buzzNoun())
+    cy.typeInAField(data.twitterHandle, faker.company.buzzNoun())
+    cy.clickAnyElement(data.howDidYouHearAboutMima)
+    cy.clickAnyElement(data.optionChoice)
+    cy.typeInAField(data.password, 'Password1$')
+    cy.clickAnyElement(data.finalSignUpButton)
 
 // Custom action  using the command folder created in supprot
     // cy.clickSignUpHomePageButton()
