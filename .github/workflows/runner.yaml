@@ -13,11 +13,11 @@ jobs:
       - name: Execute Cypress Script
         uses: cypress-io/github-action@v6
 
-       - name: Save reports
-         uses: actions/upload-artifact@v2
-         with:
+      - name: Save reports
+        uses: actions/upload-artifact@v2
+        with:
           name: reports
-          path:
+          path: |
             cypress/reports/html/
 
      
