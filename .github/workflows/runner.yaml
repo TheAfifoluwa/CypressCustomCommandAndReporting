@@ -1,0 +1,14 @@
+name: Test execution
+
+on: [push, pull_request]
+
+jobs:
+  cypress-execution:
+      runs-on: ubuntu-latest
+
+      steps:
+      - name: Intialize node and install NPM
+        uses: actions/checkout@v4
+
+      - name: Execute Cypress Script
+        uses: cyress-io/github-actions@v6
